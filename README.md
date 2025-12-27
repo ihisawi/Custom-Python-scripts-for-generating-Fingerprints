@@ -1,6 +1,6 @@
 # Molecular Fingerprint Generator for Virtual Screening
 
-This repository contains a Python-based pipeline for generating molecular fingerprints, developed as part of the study: **"Computational Studies Towards the Identification of CB2R-M1R Dual Modulators."**
+This repository contains a Python-based pipeline for generating molecular fingerprints, developed as part of the study: **"Computational Studies Towards the Identification of CB2R-M1R Dual Modulators"**
 
 The tool automates the generation of five distinct fingerprint types using **OpenBabel** and the **Chemistry Development Kit (CDK)**, facilitating reproducibility in cheminformatics workflows. [As those fingerprints are not freely available in Knime]
 
