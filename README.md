@@ -1,8 +1,8 @@
-# Molecular Fingerprint Generator
+# Molecular Fingerprint Generator for Virtual Screening
 
-This repository contains a Python-based pipeline for generating molecular fingerprints, developed as part of the study: **"Development of a Machine Learning Model for Virtual Screening to Identify New HPK1 Inhibitors with Anticancer Activity."**
+This repository contains a Python-based pipeline for generating molecular fingerprints, developed as part of the study: **"Computational Studies Towards the Identification of CB2R-M1R Dual Modulators."**
 
-The tool automates the generation of five distinct fingerprint types using **OpenBabel** and the **Chemistry Development Kit (CDK)**, facilitating reproducibility in cheminformatics workflows.
+The tool automates the generation of five distinct fingerprint types using **OpenBabel** and the **Chemistry Development Kit (CDK)**, facilitating reproducibility in cheminformatics workflows. [As those fingerprints are not freely available in Knime]
 
 ## Features
 Generates the following molecular fingerprints from SMILES strings:
@@ -43,8 +43,8 @@ To run this tool, you need:
     ```
 
 3.  **Results:**
-    The script will automatically detect your input file and save the fingerprints in the `output/` directory, organized by fingerprint type.
+    The script will automatically detect your input file and save the fingerprints in the `output/` directory, organized by fingerprint types.
 
 ## Citation
-If you utilize this resource, please cite our manuscript:
-> [Insert your manuscript citation here once published]
+If you utilize this resource, please cite our article:
+> [Computational Studies Towards the Identification of CB2R-M1R Dual Modulators]
