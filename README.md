@@ -45,6 +45,8 @@ To run this tool, you need:
 3.  **Results:**
     The script will automatically detect your input file and save the fingerprints in the `output/` directory, organized by fingerprint types.
 
+Note: Sample input and output files are included in this repository (Input: MK.csv) (Output: MK-FP2.csv). You can use these files to verify that the code is running correctly and producing the expected results.
+
 ## Citation
 If you utilize this resource, please cite our article:
 > [Computational Studies Towards the Identification of CB2R-M1R Dual Modulators]
