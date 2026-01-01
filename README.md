@@ -1,4 +1,4 @@
-# Molecular Fingerprint Generator for Virtual Screening
+# Molecular Fingerprint Generator
 
 This repository contains a Python-based pipeline for generating molecular fingerprints, developed as part of the study: **"Computational Studies Towards the Identification of CB2R-M1R Dual Modulators"**
 
