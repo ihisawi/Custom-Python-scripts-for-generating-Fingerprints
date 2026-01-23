@@ -50,3 +50,6 @@ Note: Sample input and output files are included in this repository (Input: MK.c
 ## Citation
 If you utilize this resource, please cite our article:
 > [Computational Studies Towards the Identification of CB2R-M1R Dual Modulators]
+
+## License
+This project is licensed under the MIT License - see the [LICENSE] file for details.
