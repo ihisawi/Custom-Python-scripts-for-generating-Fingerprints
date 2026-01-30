@@ -12,6 +12,7 @@ Original file is located at:
 import os
 import pandas as pd
 import sys
+import argparse
 
 # ==========================================
 # 1. INSTALL DEPENDENCIES
@@ -158,14 +159,24 @@ def process_file(filepath, output_dir="output"):
 # ==========================================
 # 4. MAIN EXECUTION LOOP
 # ==========================================
-# Look for all CSV files in current folder
-all_files = [f for f in os.listdir('.') if f.endswith('.csv')]
+# added CLI flag parsing for a custom input file (or multiple files)
+parser = argparse.ArgumentParser(description="Generate molecular fingerprints from CSV file(s).")  # **EDIT**
+parser.add_argument(
+    "-i", "--input", nargs="*", default=None,
+    help="Path(s) to input CSV file(s). If omitted, auto-detects CSV files in the current directory."
+)
+args, _ = parser.parse_known_args()
 
-# Filter out files that look like outputs (contain -FP2, -KR, etc) or hidden files
-inputs = [f for f in all_files if not any(x in f for x in ['-FP2', '-KR', '-GRAPH', '-SUB', '-HYB'])]
+# if user specified input(s), use them; otherwise keep existing auto-detection behavior
+if args.input:
+    inputs = [f for f in args.input if str(f).lower().endswith(".csv")]  # **EDIT**
+else:
+    # auto-detect CSV files in current folder
+    all_files = [f for f in os.listdir('.') if f.lower().endswith('.csv')]
+    inputs = [f for f in all_files if not any(x in f for x in ['-FP2', '-KR', '-GRAPH', '-SUB', '-HYB'])]
 
 if not inputs:
-    print("\n No CSV files found! Please upload a file to the Files tab.")
+    print("\n No CSV files found! Provide one via --input <file.csv> or upload a file to the Files tab.")  # **EDIT**
 else:
     print(f"\n Found {len(inputs)} input file(s). Starting batch processing...")
     for csv_file in inputs:
