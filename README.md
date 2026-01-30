@@ -23,8 +23,8 @@ To run this tool, you need:
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-    cd YOUR_REPO_NAME
+    git clone https://github.com/ihisawi/Custom-Python-scripts-for-generating-Fingerprints.git
+    cd Custom-Python-scripts-for-generating-Fingerprints
     ```
 
 2.  Install Python dependencies:
@@ -39,7 +39,7 @@ To run this tool, you need:
 
 2.  **Run the script:**
     ```bash
-    python fingerprint_generator.py
+    python fingerprintGeneration.py
     ```
 
 3.  **Results:**
@@ -52,4 +52,4 @@ If you utilize this resource, please cite our article:
 > [Computational Studies Towards the Identification of CB2R-M1R Dual Modulators]
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE] file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
