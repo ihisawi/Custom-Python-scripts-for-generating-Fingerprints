@@ -43,7 +43,11 @@ To run this tool, you need:
     ```
 
 3.  **Results:**
-    The script will automatically detect your input file and save the fingerprints in the `output/` directory, organized by fingerprint types.
+    The script will automatically detect an input file and save the fingerprints in the `output/` directory, organized by fingerprint types.  
+    **Optionally, specify a custom input file via a command-line flag:**  
+    ```bash
+    **python fingerprintGeneration.py --input MK.csv**
+    ```
 
 Note: Sample input and output files are included in this repository (Input: MK.csv) (Output: MK-FP2.csv). You can use these files to verify that the code is running correctly and producing the expected results.
 
